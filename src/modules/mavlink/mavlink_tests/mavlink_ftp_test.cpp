@@ -936,27 +936,27 @@ bool MavlinkFtpTest::run_tests()
 	ut_run_test(_bad_datasize_test);
 
 	// TODO FIX: cmake build system needs to run mavlink_ftp_test_data.py
-	//ut_run_test(_list_test);
+	ut_run_test(_list_test);
 
 	// TODO FIX: Compare failed: Didn't get Nak back - (reply->opcode:128) (MavlinkFTP::kRspNak:129) (../src/modules/mavlink/mavlink_tests/mavlink_ftp_test.cpp:265)
-	//ut_run_test(_list_eof_test);
+	ut_run_test(_list_eof_test);
 
 	ut_run_test(_open_badfile_test);
 
 	// TODO FIX: Compare failed: stat failed - (stat(test->file, &st):-1) (0:0) (../src/modules/mavlink/mavlink_tests/mavlink_ftp_test.cpp:320)
-	//ut_run_test(_open_terminate_test);
+	ut_run_test(_open_terminate_test);
 
 	// TODO FIX: Compare failed: Didn't get Ack back - (reply->opcode:129) (MavlinkFTP::kRspAck:128) (../src/modules/mavlink/mavlink_tests/mavlink_ftp_test.cpp:366)
-	//ut_run_test(_terminate_badsession_test);
+	ut_run_test(_terminate_badsession_test);
 
 	// TODO FIX: Compare failed: Didn't get Ack back - (reply->opcode:129) (MavlinkFTP::kRspAck:128) (../src/modules/mavlink/mavlink_tests/mavlink_ftp_test.cpp:366)
-	//ut_run_test(_read_test);
+	ut_run_test(_read_test);
 
 	// TODO FIX: Compare failed: Didn't get Ack back - (reply->opcode:129) (MavlinkFTP::kRspAck:128) (../src/modules/mavlink/mavlink_tests/mavlink_ftp_test.cpp:605)
-	//ut_run_test(_read_badsession_test);
+	ut_run_test(_read_badsession_test);
 
 	// TODO FIX: Compare failed: stat failed - (stat(test->file, &st):-1) (0:0) (../src/modules/mavlink/mavlink_tests/mavlink_ftp_test.cpp:513)
-	//ut_run_test(_burst_test);
+	ut_run_test(_burst_test);
 	ut_run_test(_removedirectory_test);
 	ut_run_test(_createdirectory_test);
 	ut_run_test(_removefile_test);
